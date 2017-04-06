@@ -1,0 +1,138 @@
+/*html{font-size:10px}*/
+/*@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}*/
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  background: #000;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 768px)
+.navbar {
+    border-radius: 0;
+}
+.navbar-brand {
+  padding-top: 5px;
+  min-height: 50px;
+  width: 100%;
+  background: url(../img/EBI_logo.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.btn-dropdown {
+  /*min-height: 50px;*/
+  background: transparent;
+  margin-right: 6px;
+  /*line-height: 50px;
+  color: #fff;
+  font-size: 16px;*/
+  padding: 0;
+  margin-left: 15px;
+}
+.btn-dropdown:focus, .btn-dropdown:acitve, .btn:active:focus {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+  color: #fff !important;
+}
+.btn-dropdown:hover {
+  color: #fff !important;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Qlik-sense, .btn-dropdown, .qlikSensetitle{
+  min-height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+}
+.Qlik-sense:hover, .Qlik-sense:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.sectionBottom {
+    height: 3rem;
+    width: 100%;
+    font-size: .8rem;
+    z-index: 2;
+    vertical-align: middle;
+    line-height: 3rem;
+    letter-spacing: 0;
+    color: #fff;
+    background: #000;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    bottom: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.iconfont {
+  margin-left: 5px;
+  margin-right: 6px;
+}
+.qlikSenseList {
+  border-top: 1px solid #aaa;
+  padding-top: 15px;
+  background: #fff;
+  height: 90%;
+  overflow-y: auto;
+}
+.qlikSenseListHead {
+  border: 1px solid #aaa;
+  border-bottom: none;
+  /*border-left: none;*/
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  background: #fff;
+}
+@media screen and (max-width: 700px){
+  .Qlik-sense, .btn-dropdown, .qlikSensetitle {
+    font-size: 1rem;
+  }
+}
+.qlikSenseContent {
+  height: 83%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.qlikSenseBody {
+  height: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+.qlikSenseListHead:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.nav-pills > li + li {
+  margin-left: 0;
+}
+.qlikSenseList ul li a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
